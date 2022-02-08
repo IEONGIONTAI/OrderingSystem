@@ -41,7 +41,7 @@ export default function HomeScreen(props) {
               <CardMedia
                 component="img"
                 alt="Pay here"
-                image="/images/payhere.png"
+                image="./images/payhere.png"
                 className={styles.media}
               />
               <CardContent>
@@ -61,7 +61,7 @@ export default function HomeScreen(props) {
               <CardMedia
                 component="img"
                 alt="At counter"
-                image="/images/atcounter.png"
+                image="./images/atcounter.png"
                 className={styles.media}
               />
               <CardContent>

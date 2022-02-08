@@ -10,7 +10,7 @@ import {
   Typography,
 } from '@material-ui/core';
 import { useStyles } from '../styles';
-import Logo from '../components/Logo';
+import Logo from './../components/Logo';
 import { Store } from '../Store';
 import { setOrderType } from '../actions';
 export default function HomeScreen(props) {
