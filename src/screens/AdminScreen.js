@@ -24,7 +24,7 @@ export default function AdminScreen(props) {
   const { orders, loading, error } = state.orderList;
   const setOrderStateHandler = async (order, action) => {
     try {
-      await Axios.put('/api/orders/' + order._id, {
+      await Axios.put('./api/orders/' + order._id, {
         action: action,
       });
       listOrders(dispatch);
