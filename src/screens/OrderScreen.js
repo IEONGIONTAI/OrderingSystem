@@ -84,7 +84,7 @@ export default function OrderScreen(props) {
   };
 
   return (
-    <Box className={styles.root}>
+    <Box className={styles.root} >
       <Box className={styles.main}>
         <Dialog
           onClose={closeHandler}
@@ -152,8 +152,7 @@ export default function OrderScreen(props) {
           </Box>
         </Dialog>
 
-        <Grid container>
-          <Grid item md={2}>
+        <Grid>
             <List>
               {loading ? (
                 <CircularProgress />
@@ -161,34 +160,34 @@ export default function OrderScreen(props) {
                 <Alert severity="error">{error}</Alert>
               ) : (
                 <>
-                  <ListItem button onClick={() => categoryClickHandler('')}>
+                  <ListItem  button onClick={() => categoryClickHandler('')}>
                     <Logo></Logo>
+                    <Typography variant="h2">點餐系統</Typography>
                   </ListItem>
                   {categories.map((category) => (
                     <ListItem
                       key={category.name}
                       button
                       onClick={() => categoryClickHandler(category.name)}
-                    >
-                      {category.name}
-                      <Avatar alt={category.name} src={category.image} />
+                      className={styles.center}
+                    > 
+                    <Card className={styles.fullButton}><Typography variant="h5" className={styles.name_1}>{category.name}</Typography></Card>
+                      
                     </ListItem>
                   ))}
                 </>
               )}
             </List>
-          </Grid>
-          <Grid item md={10}>
+          <Grid >
             <Typography
-              gutterBottom
-              className={styles.title}
-              variant="h2"
-              component="h2"
-            >
-              {categoryName || '裕豪小館'}
-            </Typography>
-
-            <Grid container spacing={1}>
+                gutterBottom
+                className={styles.title}
+                variant="h2"
+                component="h2"
+              >
+                {categoryName || '裕豪小館'}
+              </Typography>
+            <Grid container spacing={1}  alignItems="stretch">
               {loadingProducts ? (
                 <CircularProgress />
               ) : errorProducts ? (
@@ -196,9 +195,9 @@ export default function OrderScreen(props) {
               ) : (
                 products.map((product) => (
                   <Slide key={product.name} direction="up" in={true}>
-                    <Grid item md={6}>
+                    <Grid item xs={true}> 
                       <Card
-                        className={styles.card}
+                        className={[styles.card_1, styles.space]}
                         onClick={() => productClickHandler(product)}
                       >
                         <CardActionArea>
@@ -206,14 +205,13 @@ export default function OrderScreen(props) {
                             component="img"
                             alt={product.name}
                             image={product.image}
-                            className={styles.media}
                           />
                           <CardContent>
                             <Typography
                               gutterBottom
                               variant="body2"
                               color="textPrimary"
-                              component="p"
+                              component=""
                             >
                               {product.name}
                             </Typography>

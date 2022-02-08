@@ -31,7 +31,11 @@ export const useStyles = makeStyles((theme) => ({
   navy: {
     backgroundColor: '#003080',
   },
+  name_1:{
+    color: '#ff2040',
+  },
   green: {
+    height: "100px",
     backgroundColor: '#00b020',
   },
   footer: {},
@@ -68,6 +72,10 @@ export const useStyles = makeStyles((theme) => ({
   largeButton: {
     width: 250,
   },
+  fullButton: {
+    width: "100%",
+    backgroundColor: "#ffff09"
+  },
   largeInput: {
     width: '60px!important',
     padding: '0!important',
@@ -84,8 +92,15 @@ export const useStyles = makeStyles((theme) => ({
   title: {
     marginTop: 18,
   },
-  card: { margin: 10 },
+  card: { 
+    margin: 20
+  },
+  card_1: { 
+    height: "180px",
+    margin: 20
+  },
   media: { width: 200 },
+  
   ready: {
     backgroundColor: '#003080',
     color: '#ffffff',

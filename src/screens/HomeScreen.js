@@ -12,15 +12,14 @@ export default function HomeScreen(props) {
           <Box className={[styles.main, styles.center]}>
             <Typography variant="h6" component="h6">
             </Typography>
-            <Typography variant="h1" component="h1" className={styles.bold}>
-              裕豪小館<br/>
-              點餐系統
+            <Typography variant="h1" component="h1">
+              裕濠<br/>
+              點餐
             </Typography>
             <TouchAppIcon fontSize="large"></TouchAppIcon>
           </Box>
           <Box className={[styles.center, styles.green]}>
-            <Logo large />
-            <Typography variant="h5" component="h5" className={styles.footer}>
+            <Typography variant="h4" component="h4" className={styles.footer}>
               點擊以開始
             </Typography>
           </Box>

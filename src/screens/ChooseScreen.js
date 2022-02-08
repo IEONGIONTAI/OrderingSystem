@@ -14,6 +14,10 @@ import Logo from './../components/Logo';
 import { Store } from '../Store';
 import { setOrderType } from '../actions';
 export default function HomeScreen(props) {
+  const style={
+    '@media(maxWidth:500px)' : { width:'5px' }
+  }
+
   const { dispatch } = useContext(Store);
   const styles = useStyles();
   const chooseHandler = (orderType) => {
@@ -40,7 +44,7 @@ export default function HomeScreen(props) {
                   component="img"
                   alt="Eat in"
                   image="./images/eatin.png"
-                  className={styles.media}
+                  style={style}
                 />
                 <CardContent>
                   <Typography
@@ -60,7 +64,7 @@ export default function HomeScreen(props) {
                   component="img"
                   alt="Take Out"
                   image="./images/takeout.png"
-                  className={styles.media}
+                  style={style}
                 />
                 <CardContent>
                   <Typography
@@ -69,7 +73,7 @@ export default function HomeScreen(props) {
                     color="textPrimary"
                     component="p"
                   >
-                    外帶自取
+                    外帶
                   </Typography>
                 </CardContent>
               </CardActionArea>

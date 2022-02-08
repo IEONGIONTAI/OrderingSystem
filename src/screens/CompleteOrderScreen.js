@@ -54,7 +54,7 @@ export default function CompleteOrderScreen(props) {
               >
                 
               </Typography>
-              <QRCode value={(newOrder.number).toString()} size={400}/>
+              <QRCode value={(newOrder.number).toString()} size={300}/>
             </>
           )}
         </Box>
