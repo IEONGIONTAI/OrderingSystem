@@ -39,7 +39,7 @@ export default function HomeScreen(props) {
                 <CardMedia
                   component="img"
                   alt="Eat in"
-                  image="/images/eatin.png"
+                  image="OrderingSystem/images/eatin.png"
                   className={styles.media}
                 />
                 <CardContent>
