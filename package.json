@@ -2,7 +2,7 @@
   "name": "self-order-kiosk",
   "proxy": "http://127.0.0.1:5000",
   "version": "0.1.0",
-  "homepage": "https://ieongiontai.github.io/",
+  "homepage": "https://ieongiontai.github.io/OrderingSystem",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.2",

@@ -44,9 +44,9 @@ function App() {
   const { state } = useContext(Store);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Helmet>
-        <title>Self-Order Kiosk</title>
+        <title>Order</title>
       </Helmet>
 
       <ThemeProvider theme={theme}>
